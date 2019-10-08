@@ -1,0 +1,455 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD165A7B234B3E9200C3B372 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD165A7A234B3E9200C3B372 /* main.cpp */; };
+		BD165AA4234B41F000C3B372 /* libasmjit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A83234B41CD00C3B372 /* libasmjit.a */; };
+		BD165AA5234B41F000C3B372 /* libbenchmark_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A98234B41CE00C3B372 /* libbenchmark_main.a */; };
+		BD165AA6234B41F000C3B372 /* libbenchmark.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A8F234B41CE00C3B372 /* libbenchmark.a */; };
+		BD165AA7234B41F000C3B372 /* libc10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A91234B41CE00C3B372 /* libc10.dylib */; };
+		BD165AA8234B41F000C3B372 /* libc10.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = BD165A91234B41CE00C3B372 /* libc10.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BD165AA9234B41F000C3B372 /* libcaffe2_detectron_ops.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A93234B41CE00C3B372 /* libcaffe2_detectron_ops.dylib */; };
+		BD165AAA234B41F000C3B372 /* libcaffe2_detectron_ops.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = BD165A93234B41CE00C3B372 /* libcaffe2_detectron_ops.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BD165AAB234B41F000C3B372 /* libcaffe2_module_test_dynamic.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A88234B41CE00C3B372 /* libcaffe2_module_test_dynamic.dylib */; };
+		BD165AAC234B41F000C3B372 /* libcaffe2_module_test_dynamic.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = BD165A88234B41CE00C3B372 /* libcaffe2_module_test_dynamic.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BD165AAD234B41F000C3B372 /* libcaffe2_observers.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A95234B41CE00C3B372 /* libcaffe2_observers.dylib */; };
+		BD165AAE234B41F000C3B372 /* libcaffe2_observers.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = BD165A95234B41CE00C3B372 /* libcaffe2_observers.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BD165AAF234B41F000C3B372 /* libCaffe2_perfkernels_avx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A9D234B41CE00C3B372 /* libCaffe2_perfkernels_avx.a */; };
+		BD165AB0234B41F000C3B372 /* libCaffe2_perfkernels_avx2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A97234B41CE00C3B372 /* libCaffe2_perfkernels_avx2.a */; };
+		BD165AB1234B41F000C3B372 /* libCaffe2_perfkernels_avx512.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165AA1234B41CE00C3B372 /* libCaffe2_perfkernels_avx512.a */; };
+		BD165AB2234B41F000C3B372 /* libcaffe2_protos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165AA2234B41CE00C3B372 /* libcaffe2_protos.a */; };
+		BD165AB3234B41F000C3B372 /* libclog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A96234B41CE00C3B372 /* libclog.a */; };
+		BD165AB4234B41F000C3B372 /* libcpuinfo_internals.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A9C234B41CE00C3B372 /* libcpuinfo_internals.a */; };
+		BD165AB5234B41F000C3B372 /* libcpuinfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A9E234B41CE00C3B372 /* libcpuinfo.a */; };
+		BD165AB6234B41F000C3B372 /* libfbgemm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A8E234B41CE00C3B372 /* libfbgemm.a */; };
+		BD165AB7234B41F000C3B372 /* libfoxi_loader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A85234B41CE00C3B372 /* libfoxi_loader.a */; };
+		BD165AB8234B41F000C3B372 /* libgmock_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A94234B41CE00C3B372 /* libgmock_main.a */; };
+		BD165AB9234B41F000C3B372 /* libgmock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A86234B41CE00C3B372 /* libgmock.a */; };
+		BD165ABA234B41F000C3B372 /* libgtest_main.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A8D234B41CE00C3B372 /* libgtest_main.a */; };
+		BD165ABB234B41F000C3B372 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A89234B41CE00C3B372 /* libgtest.a */; };
+		BD165ABC234B41F000C3B372 /* libiomp5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A8A234B41CE00C3B372 /* libiomp5.dylib */; };
+		BD165ABD234B41F000C3B372 /* libiomp5.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = BD165A8A234B41CE00C3B372 /* libiomp5.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BD165ABE234B41F000C3B372 /* libmkldnn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165AA3234B41CE00C3B372 /* libmkldnn.a */; };
+		BD165ABF234B41F000C3B372 /* libmklml.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A82234B41CD00C3B372 /* libmklml.dylib */; };
+		BD165AC0234B41F000C3B372 /* libmklml.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = BD165A82234B41CD00C3B372 /* libmklml.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BD165AC1234B41F000C3B372 /* libnnpack_reference_layers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A84234B41CD00C3B372 /* libnnpack_reference_layers.a */; };
+		BD165AC2234B41F000C3B372 /* libnnpack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A8C234B41CE00C3B372 /* libnnpack.a */; };
+		BD165AC3234B41F000C3B372 /* libonnx_proto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A9F234B41CE00C3B372 /* libonnx_proto.a */; };
+		BD165AC4234B41F000C3B372 /* libonnx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A99234B41CE00C3B372 /* libonnx.a */; };
+		BD165AC5234B41F000C3B372 /* libprotobuf-lite.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A9A234B41CE00C3B372 /* libprotobuf-lite.a */; };
+		BD165AC6234B41F000C3B372 /* libprotobuf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A87234B41CE00C3B372 /* libprotobuf.a */; };
+		BD165AC7234B41F000C3B372 /* libprotoc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A9B234B41CE00C3B372 /* libprotoc.a */; };
+		BD165AC8234B41F100C3B372 /* libpthreadpool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165AA0234B41CE00C3B372 /* libpthreadpool.a */; };
+		BD165AC9234B41F100C3B372 /* libqnnpack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A8B234B41CE00C3B372 /* libqnnpack.a */; };
+		BD165ACA234B41F100C3B372 /* libshm.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A90234B41CE00C3B372 /* libshm.dylib */; };
+		BD165ACB234B41F100C3B372 /* libshm.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = BD165A90234B41CE00C3B372 /* libshm.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BD165ACC234B41F100C3B372 /* libtorch.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BD165A92234B41CE00C3B372 /* libtorch.dylib */; };
+		BD165ACD234B41F100C3B372 /* libtorch.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = BD165A92234B41CE00C3B372 /* libtorch.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BD165A75234B3E9200C3B372 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		BD165ACE234B41F100C3B372 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BD165ACB234B41F100C3B372 /* libshm.dylib in Embed Libraries */,
+				BD165AA8234B41F000C3B372 /* libc10.dylib in Embed Libraries */,
+				BD165AAA234B41F000C3B372 /* libcaffe2_detectron_ops.dylib in Embed Libraries */,
+				BD165AAC234B41F000C3B372 /* libcaffe2_module_test_dynamic.dylib in Embed Libraries */,
+				BD165ABD234B41F000C3B372 /* libiomp5.dylib in Embed Libraries */,
+				BD165AC0234B41F000C3B372 /* libmklml.dylib in Embed Libraries */,
+				BD165AAE234B41F000C3B372 /* libcaffe2_observers.dylib in Embed Libraries */,
+				BD165ACD234B41F100C3B372 /* libtorch.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BD165A77234B3E9200C3B372 /* dcgan */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dcgan; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD165A7A234B3E9200C3B372 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		BD165A82234B41CD00C3B372 /* libmklml.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libmklml.dylib; path = ../libtorch/lib/libmklml.dylib; sourceTree = "<group>"; };
+		BD165A83234B41CD00C3B372 /* libasmjit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libasmjit.a; path = ../libtorch/lib/libasmjit.a; sourceTree = "<group>"; };
+		BD165A84234B41CD00C3B372 /* libnnpack_reference_layers.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnnpack_reference_layers.a; path = ../libtorch/lib/libnnpack_reference_layers.a; sourceTree = "<group>"; };
+		BD165A85234B41CE00C3B372 /* libfoxi_loader.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfoxi_loader.a; path = ../libtorch/lib/libfoxi_loader.a; sourceTree = "<group>"; };
+		BD165A86234B41CE00C3B372 /* libgmock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmock.a; path = ../libtorch/lib/libgmock.a; sourceTree = "<group>"; };
+		BD165A87234B41CE00C3B372 /* libprotobuf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libprotobuf.a; path = ../libtorch/lib/libprotobuf.a; sourceTree = "<group>"; };
+		BD165A88234B41CE00C3B372 /* libcaffe2_module_test_dynamic.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcaffe2_module_test_dynamic.dylib; path = ../libtorch/lib/libcaffe2_module_test_dynamic.dylib; sourceTree = "<group>"; };
+		BD165A89234B41CE00C3B372 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = ../libtorch/lib/libgtest.a; sourceTree = "<group>"; };
+		BD165A8A234B41CE00C3B372 /* libiomp5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiomp5.dylib; path = ../libtorch/lib/libiomp5.dylib; sourceTree = "<group>"; };
+		BD165A8B234B41CE00C3B372 /* libqnnpack.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libqnnpack.a; path = ../libtorch/lib/libqnnpack.a; sourceTree = "<group>"; };
+		BD165A8C234B41CE00C3B372 /* libnnpack.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libnnpack.a; path = ../libtorch/lib/libnnpack.a; sourceTree = "<group>"; };
+		BD165A8D234B41CE00C3B372 /* libgtest_main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest_main.a; path = ../libtorch/lib/libgtest_main.a; sourceTree = "<group>"; };
+		BD165A8E234B41CE00C3B372 /* libfbgemm.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfbgemm.a; path = ../libtorch/lib/libfbgemm.a; sourceTree = "<group>"; };
+		BD165A8F234B41CE00C3B372 /* libbenchmark.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbenchmark.a; path = ../libtorch/lib/libbenchmark.a; sourceTree = "<group>"; };
+		BD165A90234B41CE00C3B372 /* libshm.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libshm.dylib; path = ../libtorch/lib/libshm.dylib; sourceTree = "<group>"; };
+		BD165A91234B41CE00C3B372 /* libc10.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libc10.dylib; path = ../libtorch/lib/libc10.dylib; sourceTree = "<group>"; };
+		BD165A92234B41CE00C3B372 /* libtorch.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libtorch.dylib; path = ../libtorch/lib/libtorch.dylib; sourceTree = "<group>"; };
+		BD165A93234B41CE00C3B372 /* libcaffe2_detectron_ops.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcaffe2_detectron_ops.dylib; path = ../libtorch/lib/libcaffe2_detectron_ops.dylib; sourceTree = "<group>"; };
+		BD165A94234B41CE00C3B372 /* libgmock_main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgmock_main.a; path = ../libtorch/lib/libgmock_main.a; sourceTree = "<group>"; };
+		BD165A95234B41CE00C3B372 /* libcaffe2_observers.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcaffe2_observers.dylib; path = ../libtorch/lib/libcaffe2_observers.dylib; sourceTree = "<group>"; };
+		BD165A96234B41CE00C3B372 /* libclog.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libclog.a; path = ../libtorch/lib/libclog.a; sourceTree = "<group>"; };
+		BD165A97234B41CE00C3B372 /* libCaffe2_perfkernels_avx2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCaffe2_perfkernels_avx2.a; path = ../libtorch/lib/libCaffe2_perfkernels_avx2.a; sourceTree = "<group>"; };
+		BD165A98234B41CE00C3B372 /* libbenchmark_main.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libbenchmark_main.a; path = ../libtorch/lib/libbenchmark_main.a; sourceTree = "<group>"; };
+		BD165A99234B41CE00C3B372 /* libonnx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libonnx.a; path = ../libtorch/lib/libonnx.a; sourceTree = "<group>"; };
+		BD165A9A234B41CE00C3B372 /* libprotobuf-lite.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libprotobuf-lite.a"; path = "../libtorch/lib/libprotobuf-lite.a"; sourceTree = "<group>"; };
+		BD165A9B234B41CE00C3B372 /* libprotoc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libprotoc.a; path = ../libtorch/lib/libprotoc.a; sourceTree = "<group>"; };
+		BD165A9C234B41CE00C3B372 /* libcpuinfo_internals.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcpuinfo_internals.a; path = ../libtorch/lib/libcpuinfo_internals.a; sourceTree = "<group>"; };
+		BD165A9D234B41CE00C3B372 /* libCaffe2_perfkernels_avx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCaffe2_perfkernels_avx.a; path = ../libtorch/lib/libCaffe2_perfkernels_avx.a; sourceTree = "<group>"; };
+		BD165A9E234B41CE00C3B372 /* libcpuinfo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcpuinfo.a; path = ../libtorch/lib/libcpuinfo.a; sourceTree = "<group>"; };
+		BD165A9F234B41CE00C3B372 /* libonnx_proto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libonnx_proto.a; path = ../libtorch/lib/libonnx_proto.a; sourceTree = "<group>"; };
+		BD165AA0234B41CE00C3B372 /* libpthreadpool.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpthreadpool.a; path = ../libtorch/lib/libpthreadpool.a; sourceTree = "<group>"; };
+		BD165AA1234B41CE00C3B372 /* libCaffe2_perfkernels_avx512.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libCaffe2_perfkernels_avx512.a; path = ../libtorch/lib/libCaffe2_perfkernels_avx512.a; sourceTree = "<group>"; };
+		BD165AA2234B41CE00C3B372 /* libcaffe2_protos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcaffe2_protos.a; path = ../libtorch/lib/libcaffe2_protos.a; sourceTree = "<group>"; };
+		BD165AA3234B41CE00C3B372 /* libmkldnn.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmkldnn.a; path = ../libtorch/lib/libmkldnn.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD165A74234B3E9200C3B372 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD165AB5234B41F000C3B372 /* libcpuinfo.a in Frameworks */,
+				BD165AA6234B41F000C3B372 /* libbenchmark.a in Frameworks */,
+				BD165AB7234B41F000C3B372 /* libfoxi_loader.a in Frameworks */,
+				BD165ABF234B41F000C3B372 /* libmklml.dylib in Frameworks */,
+				BD165AC7234B41F000C3B372 /* libprotoc.a in Frameworks */,
+				BD165AC5234B41F000C3B372 /* libprotobuf-lite.a in Frameworks */,
+				BD165AB0234B41F000C3B372 /* libCaffe2_perfkernels_avx2.a in Frameworks */,
+				BD165AA7234B41F000C3B372 /* libc10.dylib in Frameworks */,
+				BD165AC2234B41F000C3B372 /* libnnpack.a in Frameworks */,
+				BD165AC8234B41F100C3B372 /* libpthreadpool.a in Frameworks */,
+				BD165ABE234B41F000C3B372 /* libmkldnn.a in Frameworks */,
+				BD165AB1234B41F000C3B372 /* libCaffe2_perfkernels_avx512.a in Frameworks */,
+				BD165AA9234B41F000C3B372 /* libcaffe2_detectron_ops.dylib in Frameworks */,
+				BD165AA5234B41F000C3B372 /* libbenchmark_main.a in Frameworks */,
+				BD165AC4234B41F000C3B372 /* libonnx.a in Frameworks */,
+				BD165ACC234B41F100C3B372 /* libtorch.dylib in Frameworks */,
+				BD165AC1234B41F000C3B372 /* libnnpack_reference_layers.a in Frameworks */,
+				BD165AAD234B41F000C3B372 /* libcaffe2_observers.dylib in Frameworks */,
+				BD165AA4234B41F000C3B372 /* libasmjit.a in Frameworks */,
+				BD165AB3234B41F000C3B372 /* libclog.a in Frameworks */,
+				BD165ABB234B41F000C3B372 /* libgtest.a in Frameworks */,
+				BD165ACA234B41F100C3B372 /* libshm.dylib in Frameworks */,
+				BD165ABC234B41F000C3B372 /* libiomp5.dylib in Frameworks */,
+				BD165AC3234B41F000C3B372 /* libonnx_proto.a in Frameworks */,
+				BD165AAF234B41F000C3B372 /* libCaffe2_perfkernels_avx.a in Frameworks */,
+				BD165AAB234B41F000C3B372 /* libcaffe2_module_test_dynamic.dylib in Frameworks */,
+				BD165AB6234B41F000C3B372 /* libfbgemm.a in Frameworks */,
+				BD165AB2234B41F000C3B372 /* libcaffe2_protos.a in Frameworks */,
+				BD165AC6234B41F000C3B372 /* libprotobuf.a in Frameworks */,
+				BD165AB8234B41F000C3B372 /* libgmock_main.a in Frameworks */,
+				BD165ABA234B41F000C3B372 /* libgtest_main.a in Frameworks */,
+				BD165AB4234B41F000C3B372 /* libcpuinfo_internals.a in Frameworks */,
+				BD165AC9234B41F100C3B372 /* libqnnpack.a in Frameworks */,
+				BD165AB9234B41F000C3B372 /* libgmock.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD165A6E234B3E9100C3B372 = {
+			isa = PBXGroup;
+			children = (
+				BD165A79234B3E9200C3B372 /* dcgan */,
+				BD165A78234B3E9200C3B372 /* Products */,
+				BD165A81234B41CD00C3B372 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BD165A78234B3E9200C3B372 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD165A77234B3E9200C3B372 /* dcgan */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD165A79234B3E9200C3B372 /* dcgan */ = {
+			isa = PBXGroup;
+			children = (
+				BD165A7A234B3E9200C3B372 /* main.cpp */,
+			);
+			path = dcgan;
+			sourceTree = "<group>";
+		};
+		BD165A81234B41CD00C3B372 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD165A83234B41CD00C3B372 /* libasmjit.a */,
+				BD165A98234B41CE00C3B372 /* libbenchmark_main.a */,
+				BD165A8F234B41CE00C3B372 /* libbenchmark.a */,
+				BD165A91234B41CE00C3B372 /* libc10.dylib */,
+				BD165A93234B41CE00C3B372 /* libcaffe2_detectron_ops.dylib */,
+				BD165A88234B41CE00C3B372 /* libcaffe2_module_test_dynamic.dylib */,
+				BD165A95234B41CE00C3B372 /* libcaffe2_observers.dylib */,
+				BD165A9D234B41CE00C3B372 /* libCaffe2_perfkernels_avx.a */,
+				BD165A97234B41CE00C3B372 /* libCaffe2_perfkernels_avx2.a */,
+				BD165AA1234B41CE00C3B372 /* libCaffe2_perfkernels_avx512.a */,
+				BD165AA2234B41CE00C3B372 /* libcaffe2_protos.a */,
+				BD165A96234B41CE00C3B372 /* libclog.a */,
+				BD165A9C234B41CE00C3B372 /* libcpuinfo_internals.a */,
+				BD165A9E234B41CE00C3B372 /* libcpuinfo.a */,
+				BD165A8E234B41CE00C3B372 /* libfbgemm.a */,
+				BD165A85234B41CE00C3B372 /* libfoxi_loader.a */,
+				BD165A94234B41CE00C3B372 /* libgmock_main.a */,
+				BD165A86234B41CE00C3B372 /* libgmock.a */,
+				BD165A8D234B41CE00C3B372 /* libgtest_main.a */,
+				BD165A89234B41CE00C3B372 /* libgtest.a */,
+				BD165A8A234B41CE00C3B372 /* libiomp5.dylib */,
+				BD165AA3234B41CE00C3B372 /* libmkldnn.a */,
+				BD165A82234B41CD00C3B372 /* libmklml.dylib */,
+				BD165A84234B41CD00C3B372 /* libnnpack_reference_layers.a */,
+				BD165A8C234B41CE00C3B372 /* libnnpack.a */,
+				BD165A9F234B41CE00C3B372 /* libonnx_proto.a */,
+				BD165A99234B41CE00C3B372 /* libonnx.a */,
+				BD165A9A234B41CE00C3B372 /* libprotobuf-lite.a */,
+				BD165A87234B41CE00C3B372 /* libprotobuf.a */,
+				BD165A9B234B41CE00C3B372 /* libprotoc.a */,
+				BD165AA0234B41CE00C3B372 /* libpthreadpool.a */,
+				BD165A8B234B41CE00C3B372 /* libqnnpack.a */,
+				BD165A90234B41CE00C3B372 /* libshm.dylib */,
+				BD165A92234B41CE00C3B372 /* libtorch.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD165A76234B3E9200C3B372 /* dcgan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD165A7E234B3E9200C3B372 /* Build configuration list for PBXNativeTarget "dcgan" */;
+			buildPhases = (
+				BD165A73234B3E9200C3B372 /* Sources */,
+				BD165A74234B3E9200C3B372 /* Frameworks */,
+				BD165A75234B3E9200C3B372 /* CopyFiles */,
+				BD165ACE234B41F100C3B372 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dcgan;
+			productName = dcgan;
+			productReference = BD165A77234B3E9200C3B372 /* dcgan */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD165A6F234B3E9100C3B372 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = panotech;
+				TargetAttributes = {
+					BD165A76234B3E9200C3B372 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = BD165A72234B3E9100C3B372 /* Build configuration list for PBXProject "dcgan" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD165A6E234B3E9100C3B372;
+			productRefGroup = BD165A78234B3E9200C3B372 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD165A76234B3E9200C3B372 /* dcgan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD165A73234B3E9200C3B372 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD165A7B234B3E9200C3B372 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BD165A7C234B3E9200C3B372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BD165A7D234B3E9200C3B372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BD165A7F234B3E9200C3B372 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = /work/osdev/libtorch/lib;
+				HEADER_SEARCH_PATHS = "/work/osdev/libtorch/include/**";
+				LIBRARY_SEARCH_PATHS = /work/osdev/libtorch/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BD165A80234B3E9200C3B372 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = /work/osdev/libtorch/lib;
+				HEADER_SEARCH_PATHS = "/work/osdev/libtorch/include/**";
+				LIBRARY_SEARCH_PATHS = /work/osdev/libtorch/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD165A72234B3E9100C3B372 /* Build configuration list for PBXProject "dcgan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD165A7C234B3E9200C3B372 /* Debug */,
+				BD165A7D234B3E9200C3B372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD165A7E234B3E9200C3B372 /* Build configuration list for PBXNativeTarget "dcgan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD165A7F234B3E9200C3B372 /* Debug */,
+				BD165A80234B3E9200C3B372 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD165A6F234B3E9100C3B372 /* Project object */;
+}

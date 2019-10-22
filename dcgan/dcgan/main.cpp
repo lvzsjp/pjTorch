@@ -69,10 +69,35 @@ void getStart()
     std::cout <<std::endl;
     std::cout <<std::endl;
     
+    //根据已有的tensor建立新的tensor
+    a = torch::ones({5,3}, torch::TensorOptions().dtype(torch::kDouble));
+    std::cout << a <<std::endl;
+    torch::Tensor b = torch::randn_like(a, torch::TensorOptions().dtype(torch::kDouble));
+    std::cout << b <<std::endl;
     
-    a = torch::Tensor();
+    //print size
+    std::cout << a.sizes() << std::endl;
+    std::cout << a.size(0) << std::endl;
+    std::cout << a.size(1) << std::endl;
+    
+    //运算
+    torch::Tensor c;
+    c = a + b;
+    std::cout << c + 1 << std::endl;
+    
+    c = torch::empty({5,3}, torch::TensorOptions().dtype(torch::kDouble));
+    torch::add_out(c, a, b);
+    std::cout << c << std::endl;
+    std::cout << std::endl << std::endl;
+    
+    c = a - b;
+    std::cout << c << std::endl;
+    std::cout << a * b << std::endl;
+    std::cout << a / b << std::endl;
+    
+    
+    std::cout << c.slice() << std::endl;
 }
-
 
 int main(int argc, const char * argv[]) {
     
